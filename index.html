@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Pig Dice Game</h1>
+      <div class="card text-center">
+        <div class="card-body">
+          <form id="play">
+            <div class="form-row align-items-center">
+              <div class="col">
+                <input type="text" class="form-control" id="name1" placeholder="Player 1 name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" id="name2" placeholder="Player 2 name">
+              </div>
+              <div class="col">
+                <button class="btn btn-success">Play</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" id="p1name">Player 1</h5>
+              <form>
+                <button type="button" class="btn btn-primary" id="p1roll">Roll</button>
+                <button type="button" class="btn btn-dark" id="p1hold">Hold</button>
+                <br><br>
+                <div class="form-group">
+                  <label>Roll result</label>
+                  <output class="form-control" id="p1die"></output>
+                </div>
+                <div class="form-group">
+                  <label>Turn total</label>
+                  <output class="form-control" id="p1turn"></output>
+                </div>
+                <div class="form-group">
+                  <label><strong>Score</strong></label>
+                  <output class="form-control" id="p1score"></output>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 text-center">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" id="p2name">Player 2</h5>
+              <form>
+                <button type="button" class="btn btn-primary" id="p2roll" disabled>Roll</button>
+                <button type="button" class="btn btn-dark" id="p2hold">Hold</button>
+                <br><br>
+                <div class="form-group">
+                  <label>Roll result</label>
+                  <output class="form-control" id="p2die"></output>
+                </div>
+                <div class="form-group">
+                  <label>Turn total</label>
+                  <output class="form-control" id="p2turn"></output>
+                </div>
+                <div class="form-group">
+                  <label><strong>Score</strong></label>
+                  <output class="form-control" id="p2score"></output>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
